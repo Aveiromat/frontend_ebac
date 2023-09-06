@@ -1,0 +1,22 @@
+/* todos os H1*/
+h1 {
+    color: red;
+}
+/* todos os H2*/
+h2 {
+    color: blue;
+}
+/* para casos especificos / ID */
+#economy h2 {
+    color: gold;
+} 
+/* para a classe */
+.creation-date {
+    color: #ccc;
+
+}
+
+/* para tudo que nao esta especificado*/
+* {
+    color: grey;
+}
