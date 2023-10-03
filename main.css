@@ -1,0 +1,84 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #c8d6e5;
+    margin: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #5f27cd;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 16px solid #341f97;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+/* Estilos do formulário */
+form {
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+#texto-novo {
+    width: 500px; /* Aumente a altura conforme necessário */
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: #009432;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#botao-cancelar {
+    background-color: red;
+}
+
+/* Estilos da lista de tarefas */
+.lista-tarefas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.lista-tarefas li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin: 15px 0;
+    width: 80%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 32px;
+}
+
+.lista-tarefas li .concluido {
+text-decoration: line-through;
+}
