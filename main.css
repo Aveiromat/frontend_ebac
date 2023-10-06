@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.justificar {
+    text-align: justify;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+    background-color: #d31823;
+    height: 70px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body {
+    background-color: #e8e8e8;
+}
+
+.clear {
+    clear: both;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr
+}
+
+img {
+    max-width: 100%;
+    width: 320px;
+    max-height: 350px;
+    height: auto;
+}
+
+.items .item h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.sobre {
+    margin-bottom: 56px;
+}
+
+.sobre .item {
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sobre .item .conteudo-item {
+    display: flex;
+    align-items: center;
+}
+
+.sobre .item img {
+    margin-right: 16px;
+    max-width: 100%;
+}
+
+.sobre .item h3 {
+    flex: 1;
+    border-bottom: 4px solid #d31823;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+article {
+    justify-content: center;
+}
+
+.sobre .item p {
+    margin-bottom: 10px;
+}
+
+section h2 {
+    margin-bottom: 32px;
+    flex: 1;
+    border-bottom: 4px solid #d31823;
+    padding-bottom: 2px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.botoes-comprar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.botao-comprar {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.comprar-btn {
+    padding: 10px;
+    background-color: #d31823;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.item .botoes-comprar {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    body {
+        text-align: center;
+    }
+
+    .conteudo-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .conteudo-item img {
+        max-width: 100%;
+        margin-bottom: 16px;
+        align-self: center;
+    }
+
+    .conteudo-item div {
+        text-align: center;
+    }
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    body {
+        background-color: #e8e8e8;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+
+    header {
+        padding: 16px 0 0;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 40px;
+        background-color: #d31823;
+        height: 90px;
+    }
+
+
+    .item img {
+        max-width: 100%;
+    }
+
+    .sobre .item {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .sobre .item img {
+        margin-right: 0;
+
+    }
+
+    .sobre .item .conteudo-item {
+        display: flex;
+        align-items: flex-start;
+        align-items: center;
+    }
+
+    .sobre .item .conteudo-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .items {
+        display: block;
+        grid-template-columns: repeat(3, 32.6%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    .items .item .botoes-comprar {
+        display: flex;
+        align-items: flex-start;
+        align-items: center;
+    }
+
+    .items .item {
+        margin-bottom: 32px;
+    }
+
+    header {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .sobre .item a {
+        font-size: 1.5em;
+    }
+
+    .items {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .conteudo-item {
+        flex-direction: column;
+    }
+
+    article {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {}

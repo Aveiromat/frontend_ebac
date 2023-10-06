@@ -4,25 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <title>Flame Alchemist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <h3>Formulário</h3>
-    <form>
-        <input type="text" placeholder="Nome completo" required />
-        <input type="email" placeholder="E-mail" required />
-        <input type="tel" placeholder="Telefone" required />
-        <input type="text" placeholder="CPF" required />
-        <input type="text" placeholder="Endereço completo" required />
-        <input type="text" placeholder="CEP" required />
-        <button type="submit">Enviar</button>
-    </form>
+    <header>
+        <div class="container">
+            <h1>Flame Alchemist</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#sobre"> Sobre a loja</a>
+                    </li>
+                    <li>
+                        <a href="#item"> Produtos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section id="sobre" class="sobre">
+                <article class="item produto">
+                    <a>
+                        <div class="conteudo-item">
+                            <img src="/pictures/panel.png" class="loja"/>
+                            <div>
+                                <h3>Sobre a loja</h3>
+                                <p class="justificar">Mergulhe no mundo vibrante dos mangás! Explosão de aventuras, novidades quentes e paixão desenhada em cada página! Desperte a sua paixão por leitura. Mangas novos e em portugês em diversos volumes e Enviamos para todo o Brasil. </p>
+                            </div>
+                        </div>
+                    </a>
+                </article>                
+            </section>            
+            <section id="item">
+                <h2>Produtos</h2>
+                <div class="items">
+                    <article class="item produto">
+                        <a class="teste">
+                            <img src="/pictures/chainsaw.webp" />
+                            <h3>Chainsaw Man 7</h3>
+                            <p class="justificar">A trama do projeto acompanha a história de Denji, um adolescente que passa por dificuldades financeiras, até que, certo dia, ele morre e renasce como o Homem-Motosserra após um pacto com um demônio.</p>
+                            <div class="botoes-comprar">
+                            <button class="comprar-btn comprar">Comprar</button>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="item produto">
+                        <a class="teste">
+                            <img src="/pictures/jujutsu.webp" />
+                            <h3>Jujutsu Kaisen 16</h3>
+                            <p class="justificar">Após absorver Mahito, Getou começa a revelar parte de seus planos. Enquanto os feiticeiros jujutsu se reúnem para o confronto final do Incidente em Shibuya, Choso descobre quem está controlando o corpo de Getou. A destruição e o caos provocados pelo fim do ocorrido causam transformações repentinas no mundo!!</p>
+                            <div class="botoes-comprar">
+                                <button class="comprar-btn comprar">Comprar</button>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="item produto">
+                        <a class="teste">
+                            <img src="/pictures/vinland.webp" />
+                            <h3>Vinland Saga 20</h3>
+                            <p class="justificar">Thorfinn descobre que seus amigos, com exceção de Zoiúdo e Karli, foram sequestrados por Garm, que o convocou para juntar-se ao ataque em Jomsborg. Thorkell recebe a mensagem de Knut para que ele interfira no conflito do exército Jomsviking e está animado com as batalhas da Guerra do Mar Báltico que se aproximam.</p>
+                            <div class="botoes-comprar">
+                                <button class="comprar-btn comprar">Comprar</button>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="item produto">
+                        <a class="teste">
+                            <img src="/pictures/inspector.webp" />
+                            <h3>Inspector 3</h3>
+                            <p class="justificar">Descobriu-se que o corpo exposto em praça pública, como se fosse uma obra de arte macabra, era de uma aluna do Colégio Ousou. Kougami foi afastado do caso devido à similaridade com o “Caso dos Espécimes”, no qual ele perdeu um de seus subordinados. Contudo, ele e Akane continuam a investigar por conta própria e se aproximam cada vez mais da verdade!!</p>
+                            <div class="botoes-comprar">
+                                <button class="comprar-btn comprar">Comprar</button>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="item produto">
+                        <a class="teste">
+                            <img src="/pictures/inspector.webp" />
+                            <h3>Inspector 3</h3>
+                            <p class="justificar">Descobriu-se que o corpo exposto em praça pública, como se fosse uma obra de arte macabra, era de uma aluna do Colégio Ousou. Kougami foi afastado do caso devido à similaridade com o “Caso dos Espécimes”, no qual ele perdeu um de seus subordinados. Contudo, ele e Akane continuam a investigar por conta própria e se aproximam cada vez mais da verdade!!</p>
+                            <div class="botoes-comprar">
+                                <button class="comprar-btn comprar">Comprar</button>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="item produto">
+                        <a class="teste">
+                            <img src="/pictures/vinland.webp" />
+                            <h3>Vinland Saga 20</h3>
+                            <p class="justificar">Thorfinn descobre que seus amigos, com exceção de Zoiúdo e Karli, foram sequestrados por Garm, que o convocou para juntar-se ao ataque em Jomsborg. Thorkell recebe a mensagem de Knut para que ele interfira no conflito do exército Jomsviking e está animado com as batalhas da Guerra do Mar Báltico que se aproximam.</p>
+                            <div class="botoes-comprar">
+                                <button class="comprar-btn comprar">Comprar</button>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="item produto">
+                        <a class="teste">
+                            <img src="/pictures/jujutsu.webp" />
+                            <h3>Jujutsu Kaisen 16</h3>
+                            <p class="justificar">Após absorver Mahito, Getou começa a revelar parte de seus planos. Enquanto os feiticeiros jujutsu se reúnem para o confronto final do Incidente em Shibuya, Choso descobre quem está controlando o corpo de Getou. A destruição e o caos provocados pelo fim do ocorrido causam transformações repentinas no mundo!!</p>
+                            <div class="botoes-comprar">
+                                <button class="comprar-btn comprar">Comprar</button>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="item produto">
+                        <a href="#">
+                            <img src="/pictures/chainsaw.webp" />
+                            <h3>Chainsaw Man 7</h3>
+                            <p class="justificar">A trama do projeto acompanha a história de Denji, um adolescente que passa por dificuldades financeiras, até que, certo dia, ele morre e renasce como o Homem-Motosserra após um pacto com um demônio.</p>
+                            <div class="botoes-comprar">
+                            <button class="comprar-btn comprar">Comprar</button>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.botao-menu button').click(function () {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
 </body>
 
 </html>
