@@ -125,7 +125,7 @@ section h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: auto;
 }
 
 .botao-comprar {
@@ -292,6 +292,18 @@ section h2 {
 
     article {
         text-align: center;
+    }
+
+    .sobre .item .conteudo-sobre {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .sobre .item img {
+        width: 100%;
+        max-height: none;
+        margin-bottom: 16px;
     }
 }
 
