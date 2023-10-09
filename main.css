@@ -7,8 +7,19 @@
     text-decoration: none;
 }
 
+.teste {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.conteudo-item {
+    cursor: auto;
+}
+
 .justificar {
     text-align: justify;
+    flex: 1;
 }
 
 .container {
@@ -66,6 +77,7 @@ img {
 .items .item h3 {
     display: flex;
     justify-content: center;
+    padding-top: 5px;
 }
 
 .sobre {
@@ -116,8 +128,8 @@ section h2 {
 
 .items {
     display: grid;
-    grid-template-columns: repeat(4, 24%);
-    column-gap: 1%;
+    grid-template-columns: repeat(4, 22%);
+    column-gap: 4%;
     row-gap: 5%;
 }
 
@@ -205,6 +217,10 @@ section h2 {
         height: 90px;
     }
 
+    a.teste {
+        display: flex;
+        align-items: center;
+    }
 
     .item img {
         max-width: 100%;
@@ -283,7 +299,8 @@ section h2 {
     }
 
     .items {
-        grid-template-columns: repeat(2, 49%);
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 4%;
     }
 
     .conteudo-item {
@@ -304,6 +321,11 @@ section h2 {
         width: 100%;
         max-height: none;
         margin-bottom: 16px;
+    }
+
+    a.teste {
+        display: flex;
+        align-items: center;
     }
 }
 
