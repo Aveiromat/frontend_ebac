@@ -1,0 +1,22 @@
+body {
+    position: relative;
+    width: 100%;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    /* Altura máxima desejada */
+    width: 100%;
+    /* Largura de 100% do contêiner pai */
+    overflow: hidden;
+    justify-content: center;
+}
+
+.carousel-indicators {
+    top: 0;
+    align-items: center;
+    margin-top: 450px;
+}
