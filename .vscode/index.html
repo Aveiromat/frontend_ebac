@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waves</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Waves</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <cab id="inicio">
+        <section id="inicio-desktop">
+            <div class="container-fluid">
+                <div id="carousel-exemplo-desktop" class="w-100 carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="5000" class="carousel-item active">
+                            <img class="d-block w-100" src="./img/folder1.png" alt="Desktop Image 1">
+                        </div>
+                        <div data-bs-interval="5000" class="carousel-item">
+                            <img class="d-block w-100" src="./img/folder 2.jpg" alt="Desktop Image 2">
+                        </div>
+                        <div data-bs-interval="5000" class="carousel-item">
+                            <img class="d-block w-100" src="./img/folder 3.png" alt="Desktop Image 3">
+                        </div>
+                        <div data-bs-interval="5000" class="carousel-item">
+                            <img class="d-block w-100" src="./img/folder4.webp" alt="Desktop Image 4">
+                        </div>
+                        <!-- Adicione mais slides conforme necessário para a versão desktop -->
+                        <button data-bs-target="#carousel-exemplo-desktop" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button data-bs-target="#carousel-exemplo-desktop" data-bs-slide="next" class="carousel-control-next" type="button">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-exemplo-desktop" class="active" data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#carousel-exemplo-desktop" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel-exemplo-desktop" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#carousel-exemplo-desktop" data-bs-slide-to="3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        
+        <!-- Seção para Mobile -->
+        <section id="inicio-mobile">
+            <div class="container-fluid">
+                <div id="carousel-exemplo-mobile" class="w-100 carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="500000" class="carousel-item active">
+                            <img class="d-block w-100" src="./img/folder1mobile.png" alt="Mobile Image 1">
+                        </div>
+                        <div data-bs-interval="500000" class="carousel-item">
+                            <img class="d-block w-100" src="./img/folder2mobile.jpg" alt="Mobile Image 2">
+                        </div>
+                        <div data-bs-interval="500000" class="carousel-item">
+                            <img class="d-block w-100" src="./img/folder3mobile.png" alt="Mobile Image 3">
+                        </div>
+                        <div data-bs-interval="500000" class="carousel-item">
+                            <img class="d-block w-100" src="./img/folder4mobile.webp" alt="Mobile Image 4">
+                        </div>
+                        <!-- Adicione mais slides conforme necessário para a versão mobile -->
+                        <button data-bs-target="#carousel-exemplo-mobile" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button data-bs-target="#carousel-exemplo-mobile" data-bs-slide="next" class="carousel-control-next" type="button">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-exemplo-mobile" class="active" data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#carousel-exemplo-mobile" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel-exemplo-mobile" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#carousel-exemplo-mobile" data-bs-slide-to="3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </cab>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="container">
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active"
+                        type="button">Tênis</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Camisetas</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Bags</button>
+                </nav>
+                <div class="tab-content">
+                    <div id="aba1" class="tab-pane active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <article class="card h-100">
+                                        <img src="./img/navy.webp" alt="100x100generica">
+                                        <div class="card-body d-flex flex-column">
+                                            <h4 class="card-title">TÊNIS OLD SKOOL NAVY WHITE</h4>
+                                            <p class="card-text flex-grow-1">
+                                                Skate Classics: Ultra resistência no interior para a prática do skate. Completamente redesenhada para o skate moderno, a coleção Skate Classics oferece mais do que os skatistas precisam para permitir evolução máxima. Com cabedal de camurça e lona, o Tênis Skate Old Skool Navy White oferece a aparência icônica que você deseja, trazendo todos os benefícios de desempenho que os skatistas exigem.
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Comprar agora!</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <article class="card h-100">
+                                        <img src="./img/adiease.avif" alt="100x100generica">
+                                        <div class="card-body d-flex flex-column">
+                                            <h4 class="card-title">TÊNIS ADIEASE</h4>
+                                            <p class="card-text flex-grow-1">
+                                                O Adiease está de volta, com mais tecnologia em sua silhueta icônica para skate. Conhecido por sua versatilidade, funcionalidade e estilo minimalista, o novo Adiease da adidas adiciona Adituff, palmilha de skate em poliuretano e foxing premium à sua construção em camurça. O resultado é um estilo Adiease clássico com mais durabilidade e resistência ao desgaste.
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Comprar agora!</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <article class="card h-100">
+                                        <img src="./img/jordan.avif" alt="100x100generica">
+                                        <div class="card-body d-flex flex-column">
+                                            <h4 class="card-title">TÊNIS AIR JORDAN 1 MID</h4>
+                                            <p class="card-text flex-grow-1">
+                                                Inspirado no AJ1 original, essa edição cano médio mantém o visual icônico que você ama, enquanto a escolha de cores e o couro conferem uma identidade distinta.
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Comprar agora!</a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="aba2" class="tab-pane">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <article class="card h-100">
+                                        <img src="./img/camisetavans.webp" alt="100x100generica">
+                                        <div class="card-body d-flex flex-column">
+                                            <h4 class="card-title">CAMISETA VILA SÉSAMO BLACK</h4>
+                                            <p class="card-text flex-grow-1">
+                                                Mesclando comédia com aprendizado, a Vila Sésamo tem ajudado a formar crianças mais espertas, fortes e bondosas há cinco décadas. Com uma estratégia minuciosa e seu lado profundamente inclusivo, a Vila Sésamo se tornou o programa infantil mais assistido da história e, sem dúvida, o mais impactante. Nesta temporada, convidamos você a se juntar à Vans na vila mais amigável do mundo. A coleção completa celebra a vila onde todo monstro, pássaro, resmungão e humano se sente em casa. Evocando memórias da infância e despertando nostalgia nos adultos, a coleção Vans X Sesame Street foi pensada para toda a família. 
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Comprar agora!</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <article class="card h-100">
+                                        <img src="./img/camisetacachorro.webp" alt="100x100generica">
+                                        <div class="card-body d-flex flex-column">
+                                            <h4 class="card-title"> CAMISETA PUP MARSHMALLOW</h4>
+                                            <p class="card-text flex-grow-1">
+                                                A camiseta Rhythm Pup T-Shirt é feita de algodão mais pesado e tem um cachorro cantarolando uma música estampado nas costas. 100% algodão. Camiseta de manga curta com gola careca. Estampas em serigrafia. Caimento clássico. Ambos os modelos vestem tamanho médio.
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Comprar agora!</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <article class="card h-100">
+                                        <img src="./img/legday.jpg" alt="100x100generica">
+                                        <div class="card-body d-flex flex-column">
+                                            <h4 class="card-title">Nike Dri-FIT</h4>
+                                            <p class="card-text flex-grow-1">
+                                                Com um ajuste relaxado, esta camiseta Nike que absorve o suor está 100% pronta para a academia e garante que você lembre de fazer um treino de corpo inteiro. Afinal, quem quer pernas de espaguete?
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Comprar agora!</a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="aba3" class="tab-pane">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <article class="card h-100">
+                                        <img src="./img/bagvans.webp" alt="100x100generica">
+                                        <div class="card-body d-flex flex-column">
+                                            <h4 class="card-title">SHOULDER BAG BLACK RIPSTOP</h4>
+                                            <p class="card-text flex-grow-1">
+                                                A Bolsa Bail Shoulder Bag Black Ripstop é uma bolsa transversal moderna, que imprime toda a autenticidade e irreverência presente nos acessórios da Vans. Confeccionada em tecidos de cordura® reconhecidos por sua durabilidade e resistência a abrasão, rasgos e raspagens. Ideal para carregar seus itens essenciais, a bolsa preta possui dois compartimentos com zíper, uma alça ajustável com protetor e aplicação de etiqueta tecida com assinatura Vans em “Drop V” e “Off The Wall”. Dimensões (AxLxP) - 17,5 x 13 x 5 cm. Capacidade: 1,8 litros.
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Comprar agora!</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <article class="card h-100">
+                                        <img src="./img/quadriculada.webp" alt="100x100generica">
+                                        <div class="card-body d-flex flex-column">
+                                            <h4 class="card-title">CROSSBODY BLACK WHITE</h4>
+                                            <p class="card-text flex-grow-1">
+                                                A Bolsa Go Getter Crossbody Black White Checkerboard é uma bolsa transversal moderna, que imprime toda a autenticidade e irreverência presente nos acessórios da Vans. Confeccionada em poliéster reciclável, a bolsa com estampa icônica em checkerboard apresenta uma alça longa ajustável. O modelo traz bolso externo com zíper, um bolso traseiro deslizante e aplicação de patch frontal com o lendário logotipo do skate com assinatura Vans em “Drop V” e “Off The Wall”. Dimensões (AxLxP): 17,7 cm x 12,7 cm x 6,35 cm.
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Comprar agora!</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <article class="card h-100">
+                                        <img src="./img/anjuss.webp" alt="100x100generica">
+                                        <div class="card-body d-flex flex-column">
+                                            <h4 class="card-title">SHOULDER BAG ANJUSS BULK</h4>
+                                            <p class="card-text flex-grow-1">
+                                                A Bolsa Anjuss Bulk é um exemplo de versatilidade e estilo, oferecendo uma abordagem contemporânea e funcional para o seu dia a dia. Com um design inspirado na praticidade da Bolsa Bail Shoulder Bag Black Ripstop da Vans, a Anjuss Bulk apresenta uma fusão única de moda e utilidade.
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Comprar agora!</a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+        <section id="contato">
+            <div class="container mt-5">
+                <h2>Fale conosco!</h2>
+                <div class="container">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" class="form-control telefone" id="telefone" placeholder="Digite seu telefone">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Escreva sua mensagem:</label>
+                        <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mx-auto mt-3 d-flex align-items-center">Enviar</button>
+                </form>
+            </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        
+    $(document).ready(function () {
+        $('#carousel-exemplo-desktop').on('slid.bs.carousel', function (e) {
+            var index = $(e.relatedTarget).index();
+            $('[data-bs-target="#carousel-exemplo-desktop"]').find('.active').removeClass('active');
+            $('[data-bs-target="#carousel-exemplo-desktop"]').find('[data-bs-slide-to="' + index + '"]').addClass('active');
+        });
+
+        $('#carousel-exemplo-mobile').on('slid.bs.carousel', function (e) {
+            var index = $(e.relatedTarget).index();
+            $('[data-bs-target="#carousel-exemplo-mobile"]').find('.active').removeClass('active');
+            $('[data-bs-target="#carousel-exemplo-mobile"]').find('[data-bs-slide-to="' + index + '"]').addClass('active');
+        });
+    });
+</script>
+
+</body>
+
+</html>
