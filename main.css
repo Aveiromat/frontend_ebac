@@ -3,12 +3,52 @@ body {
 }
 
 .navbar {
-    background-color: #e15f41;
+    background-color: #17933e;
 }
 
 #cabecalho .nav .nav-link.active {
     background-color: #fff;
-    color: #e15f41;
+    color: #17933e;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin: auto;
+    width: 5%;
+}
+
+.centralizar {
+    align-self: center;
+}
+
+button.carousel-control-next,
+button.carousel-control-prev {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.carousel-indicators {
+    margin: auto;
+    width: 10%;
+}
+
+span.carousel-control-next-icon.btn.btn-dark,
+span.carousel-control-prev-icon.btn.btn-dark {
+    border-radius: 40%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: red;
+    /* Substitua "red" pela cor desejada */
+}
+
+img#home {
+    max-height: 40px;
+}
+
+img.center.w-100 {
+    max-height: 350px;
 }
 
 #cabecalho .nav .nav-link,
@@ -19,19 +59,20 @@ body {
 }
 
 .navbar-toggler {
-    background-color: #ffeae8;
+    background-color: #94c13925;
 }
 
 .section-title {
-    font-family: pacifico;
+    font-family: 'Quicksand', sans-serif;
 }
 
-#sobre-o-restaurante, #cardapio {
-    background-color: #ffeae8;
+#about,
+#cardapio {
+    background-color: #94c13925;
 }
 
 .text-colored {
-    color: #e15f41;
+    color: #17933e;
 }
 
 .carousel-inner {
@@ -40,12 +81,12 @@ body {
 
 .nav-cardapio .nav-link.active,
 #fale-conosco button {
-    background-color: #e15f41;
+    background-color: #17933e;
     color: #fff;
 }
 
 .nav-cardapio .nav-link:hover {
-    color: #e15f41;
+    color: #17933e;
 }
 
 .social-links li {

@@ -8,19 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-0tXOUs/oaqCka5e+xPhJiHPqC+Pd6vUTmCzFG1Fcr5te3cCJtW3R4REv7LUj7fqjjn4qk8lENObtu7u2W3KGsQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
 
-    <title>Restaurante</title>
+
+    <title>COC</title>
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0 section-title">Nome do restaurante</h1>
+            <img id="home" src="./images/Portal_COC.png" alt="">
+            <h1 class="navbar-brand m-0 section-title">COC Fundamental</h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,19 +35,19 @@
                     <li class="nav-item fw-bold">
                         <a href="#sobre-o-restaurante" class="nav-link">
                             <i class="bi bi-house-door me-1"></i>
-                            Sobre o restaurante
+                            Sobre
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a href="#eventos" class="nav-link">
                             <i class="bi bi-calendar-check me-1"></i>
-                            Eventos
+                            Diferenciais
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a href="#cardapio" class="nav-link">
                             <i class="bi bi-card-text me-1"></i>
-                            Nosso cardápio
+                            Plataformas
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
@@ -59,50 +65,46 @@
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="images/slides/slide1.png" alt="">
+                        <img src="images/slides/Banner1.webp" alt="">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="images/slides/slide2.png" alt="">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="images/slides/slide3.png" alt="">
+                        <img src="images/slides/Banner2.webp" alt="">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+                    <span class="carousel-control-prev-icon btn btn-dark"></span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                    <span class="carousel-control-next-icon btn btn-dark"></span>
                 </button>
-                <div class="carousel-indicators">
+                <div class="carousel-indicators btn btn-dark mb-3">
                     <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
             </div>
-            <div class="pt-5 pb-5">
+            <div class="pt-5 pb-5" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="espaço interno">
+                            <img src="images/cardapio/fachada.jpg" class="d-block w-100 rounded" alt="espaço interno">
                         </div>
                         <div class="col-md-7 mt-3 mt-md-0">
-                            <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
+                            <h2 class="section-title">Sobre o <span class="text-colored">COC</span></h2>
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint quam, esse alias nobis
                                 iste et suscipit voluptate culpa vitae asperiores iusto porro ratione, animi autem
-                                accusantium dolorum, quisquam odit praesentium.
+                                accusantium dolorum, quisquam odit praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, officia aspernatur corporis alias atque impedit quae praesentium doloribus cum rem voluptatum omnis nobis corrupti aperiam dolorum minus minima excepturi.
+
                             </p>
-                            <h3 class="section-title">Sobre o <span class="text-colored">espaço</span></h3>
+                            <h3 class="section-title">Nossa <span class="text-colored">motivação</span></h3>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem molestiae vel quod porro
                                 ad. Suscipit dicta velit veniam ratione natus error excepturi, cupiditate facilis
                                 similique in vero, recusandae eum quasi?
                             </p>
                             <ul>
-                                <li>item 0</li>
-                                <li>item 1</li>
-                                <li>item 2</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum</li>
                             </ul>
                         </div>
                     </div>
@@ -112,34 +114,34 @@
         <section id="eventos" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões</span></h2>
+                    <h2 class="section-title text-center">Nossos <span class="text-colored">diferenciais</span></h2>
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-4">
-                        <img src="images/eventos/aniversario.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <img src="images/cardapio/educacao.jpg" alt="" class="d-block w-100 rounded mb-2">
                         <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-calendar-heart-fill"></i>
-                            Aniversários
+                            <i class="bi bi-backpack-fill"></i>
+                            Educação
                         </h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quas temporibus culpa fugiat,
                             aliquid itaque fugit ab? Voluptatibus similique, laudantium laborum quidem harum adipisci
                             doloribus tempore dolor dolorem quia porro!</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="images/eventos/casamento.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <img src="images/cardapio/comprome.jpg" alt="" class="d-block w-100 rounded mb-2">
                         <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-arrow-through-heart-fill"></i>
-                            Recepção casamentos
+                            <i class="bi bi-mortarboard-fill"></i>
+                            Comprometimento
                         </h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quas temporibus culpa fugiat,
                             aliquid itaque fugit ab? Voluptatibus similique, laudantium laborum quidem harum adipisci
                             doloribus tempore dolor dolorem quia porro!</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <img src="images/cardapio/tradicao.jpg" alt="" class="d-block w-100 rounded mb-2">
                         <h3 class="section-title text-colored fs-4">
                             <i class="bi bi-people-fill"></i>
-                            Confraternizações
+                            Tradição
                         </h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quas temporibus culpa fugiat,
                             aliquid itaque fugit ab? Voluptatibus similique, laudantium laborum quidem harum adipisci
@@ -151,293 +153,98 @@
         <section id="cardapio" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center mb-5">Nosso <span class="text-colored">cardápio</span></h2>
+                    <h2 class="section-title text-center mb-5">Nossas <span class="text-colored">plataformas</span></h2>
                 </div>
                 <div class="row">
-                    <aside class="col-md-2">
+                    <aside class="col-md-2 mb-3">
                         <nav class="nav nav-pills flex-column nav-cardapio">
                             <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-nao-alcoolicas"
-                                class="fw-bold text-start nav-link text-colored active">Bebidas não alcoólicas</button>
+                                class="fw-bold text-start nav-link text-colored active">Nota Máxima</button>
                             <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas"
-                                class="fw-bold text-start nav-link text-colored">Bebidas alcoólicas</button>
+                                class="fw-bold text-start nav-link text-colored">Mundo Astro</button>
                             <button type="button" data-bs-toggle="tab" data-bs-target="#entradas"
-                                class="fw-bold text-start nav-link text-colored">Entradas</button>
+                                class="fw-bold text-start nav-link text-colored">Unimestre</button>
                             <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais"
-                                class="fw-bold text-start nav-link text-colored">Pratos principais</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas"
-                                class="fw-bold text-start nav-link text-colored">Sobremesas</button>
+                                class="fw-bold text-start nav-link text-colored">Portal COC</button>
                         </nav>
                     </aside>
                     <div class="col-md-10">
                         <div class="tab-content">
                             <div class="tab-pane active" id="bebidas-nao-alcoolicas">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg"
-                                            alt="Coca">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
+                                    <div class="d-flex flex-column">
+                                        <div class="centralizar">
+                                            <img class="center w-100" src="images/cardapio/logo_notamaxima.png"
+                                                alt="Coca">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2 flex-grow-1">Plataforma Nota Máxima</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/suco.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg"
-                                            alt="Coca">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/suco.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg"
-                                            alt="Coca">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/suco.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
+                                            Um ambiente educacional para o ensino fundamental II que proporciona
+                                            videoaulas, materiais em PDF e acesso a diversos conteúdos didáticos. Essa
+                                            ferramenta permitirá que os estudantes assistam às aulas, estudem no seu
+                                            próprio ritmo e aprofundem conhecimentos. Compartilhamos o login e senha
+                                            para que possam acompanhar o progresso acadêmico de nosso(s) estudante(s),
+                                            enfatizando a relevância da parceria entre família e escola nessa jornada
+                                            educacional.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="bebidas-alcoolicas">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg"
-                                            alt="Cerveja">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
+                                    <div class="d-flex flex-column">
+                                        <div class="centralizar">
+                                            <img class="center w-100" src="images/cardapio/mundoastro.png" alt="Coca">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2 flex-grow-1">Plataforma Mundo Astro</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/cerveja.jpg" alt="Coca">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/cerveja.jpg" alt="Coca">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
+                                            Um ambiente educacional para o ensino fundamental I que proporciona
+                                            videoaulas, materiais em PDF e acesso a diversos conteúdos didáticos. Essa
+                                            ferramenta permitirá que os estudantes assistam às aulas, estudem no seu
+                                            próprio ritmo e aprofundem conhecimentos. Compartilhamos o login e senha
+                                            para que possam acompanhar o progresso acadêmico de nosso(s) estudante(s),
+                                            enfatizando a relevância da parceria entre família e escola nessa jornada
+                                            educacional.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="entradas">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg"
-                                            alt="Cerveja">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
+                                    <div class="d-flex flex-column">
+                                        <div class="centralizar">
+                                            <img class="center w-100" src="images/cardapio/unimestre.png" alt="Coca">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2 flex-grow-1">Plataforma Unimestre</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg"
-                                            alt="Coca">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg"
-                                            alt="Coca">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
+                                            O Colégio COC, comprometido em proporcionar sempre um excelente atendimento,
+                                            tem o prazer de apresentar a ferramenta de comunicação, o Sistema Integrado
+                                            de Gestão Educacional UNIMESTRE, que conecta alunos, pais, professores e
+                                            todos os segmentos da escola de forma mais eficiente.
+                                            Reconhecendo os desafios da vida moderna que muitas vezes nos afastam do
+                                            contato próximo, estamos empenhados em estreitar nossos laços com a
+                                            comunidade escolar. Por meio dos nossos sites, oferecemos informações e
+                                            consultas online, como notas, frequências, ocorrências, avisos, horários de
+                                            aula e acompanhamento financeiro.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="pratos-principais">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/pratos/pizza.jpg" alt="Cerveja">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
+                                    <div class="d-flex flex-column">
+                                        <div class="centralizar">
+                                            <img class="center w-100" src="images/cardapio/header-sobre-mobile.webp"
+                                                alt="Coca">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2 flex-grow-1">Plataforma Portal COC</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg"
-                                            alt="Coca">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg"
-                                            alt="Coca">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="sobremesas">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/sobremesas/bolo.jpg"
-                                            alt="Cerveja">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg"
-                                            alt="Coca">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg"
-                                            alt="Coca">
-                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor id incidunt
-                                            unde non mollitia tenetur.
+                                            A nossa principal ferramenta de comunicação com a escola parceira foi
+                                            totalmente renovada para uma melhor experiência de toda a comunidade
+                                            escolar. Um ambiente de aprendizado 100% digital, o Portal COC oferece
+                                            soluções educacionais para estudantes, pais, educadores e gestores em um só
+                                            lugar. A proposta é facilitar a aprendizagem e criar novas maneiras de
+                                            ensinar, construindo conhecimento de forma inteligente, fluida e inovadora.
                                         </p>
                                     </div>
                                 </div>
@@ -446,92 +253,93 @@
                     </div>
                 </div>
             </div>
-    </section>
-    <section id="fale-conosco" class="pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
-            </div>
-            <div class="row">
-                <div class="col-md-7 mb-5">
-                    <form id="formContato">
-                        <div class="mb-3">
-                            <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
-                            <input type="text" id="nome" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label fw-bold text-colored" required>Seu e-mail</label>
-                            <input type="email" id="email" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)
-                            </label>
-                            <input type="tel" id="telefone" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensagem" class="form-label fw-bold text-colored" required>Sua mensagem</label>
-                            <textarea class="form-control" id="mensagem"></textarea>
-                        </div>
-                        <button type="submit" class="btn fw-bold">Enviar</button>
-                    </form>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
                 </div>
-                <div class="col-md-5">
-                    <div class="row">
-                        <h3 class="section-title fs-4 text-colored">
-                            <i class="bi bi-hand-thumbs-up-fill"></i>
-                            Redes sociais
-                        </h3>
-                        <ul class="social-links">
-                            <li class="fs-5">
-                                <a href="#">
-                                    <i class="bi bi-facebook text-colored"></i>
-                                </a>
-                            </li>
-                            <li class="fs-5 ms-1 me-1">
-                                <a href="#">
-                                    <i class="bi bi-instagram text-colored"></i>
-                                </a>
-                            </li>
-                            <li class="fs-5">
-                                <a href="#">
-                                    <i class="bi bi-whatsapp text-colored"></i>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form id="formContato">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored" required>Seu e-mail</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)
+                                </label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored" required>Sua
+                                    mensagem</label>
+                                <textarea class="form-control" id="mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
                     </div>
-                    <div class="row mt-4">
-                        <h3 class="section-title fs-4 text-colored">
-                            <i class="bi bi-cursor-fill"></i>
-                            Endereço
-                        </h3>
-                        <p>
-                            Rua exemplo n° 404, Bairro Desenvolvedor - São paulo - SP
-                        </p>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua exemplo n° 404, Bairro Desenvolvedor - São paulo - SP
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#telefone').mask('(00) 00000-0000');
 
-            $('#formContato').submit(function(e) {
+            $('#formContato').submit(function (e) {
                 var numeroDigitado = $('#telefone').val();
 
                 if (numeroDigitado.length < 13) {
                     alert('O número deve ter 10 ou mais dígitos');
                     e.preventDefault();
                 } else {
-                    
+
                 }
             });
         });
     </script>
-    
+
 </body>
 
 </html>
