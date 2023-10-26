@@ -103,4 +103,23 @@ img.center.w-100 {
     .carousel-item img {
         height: 280px;
     }
+
+    ul.nav.nav-pills.d-block.d-md-flex.pt-3 {
+        padding-top: 10px;
+        margin-bottom: -15px;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bs: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    ul.nav.nav-pills.d-block.d-md-flex.pt-3.pt-lg-0 {
+        display: flex;
+        justify-content: center!important;
+    }
 }
