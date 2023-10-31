@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @function calculate-width($columns) {
-    @return percentage($columns / 3);
+    @return percentage(calc($columns / 3));
 }
