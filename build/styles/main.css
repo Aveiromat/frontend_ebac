@@ -1,5 +1,3 @@
-/* styles.less */
-/* Escopo global */
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +15,6 @@ li {
   width: 100%;
   margin: 0 auto;
 }
-/* Escopo do header */
 header {
   background-color: #182C61;
   position: sticky;
@@ -41,7 +38,6 @@ header .menu li a {
   color: #fff;
   text-decoration: none;
 }
-/* Escopo da seção */
 section {
   padding: 56px 0;
 }
@@ -70,8 +66,10 @@ section .products .product-button {
 section .products .product-button:hover {
   background-color: #4cd137;
 }
-/* Media queries */
 @media screen and (max-width: 1023px) {
+  body {
+    background-color: red;
+  }
   .container {
     max-width: 80%;
   }
@@ -81,6 +79,9 @@ section .products .product-button:hover {
   }
 }
 @media screen and (max-width: 767px) {
+  body {
+    background-color: blue;
+  }
   .products {
     display: block;
   }

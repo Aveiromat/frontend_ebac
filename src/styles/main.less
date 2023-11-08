@@ -1,8 +1,5 @@
-/* styles.less */
-
 @import 'variables.less';
 
-/* Escopo global */
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +21,6 @@ li {
     margin: 0 auto;
 }
 
-/* Escopo do header */
 header {
     background-color: @cores[cor-fundo-header];
     position: sticky;
@@ -53,7 +49,6 @@ header {
     }
 }
 
-/* Escopo da seção */
 section {
     padding: 56px 0;
 
@@ -87,8 +82,16 @@ section {
     }
 }
 
-/* Media queries */
-@media screen and (max-width: 1023px) {
+@escapar: ~"screen and (max-width: 1023px)";
+
+@escapar767: ~"screen and (max-width: 767px)";
+
+@media @escapar {
+
+    body {
+        background-color: red;
+    }
+
     .container {
         max-width: 80%;
     }
@@ -99,7 +102,12 @@ section {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media @escapar767 {
+
+    body {
+        background-color: blue;
+    }
+
     .products {
         display: block;
 
