@@ -55,7 +55,10 @@
                     reposElement.innerText = json.public_repos;
                     githubElement.href = json.html_url;
                 })
-        })
+                .catch(function (error) {
+                console.error('Erro na requisição:', error);
+            });
+        });
     </script>
 </body>
 
