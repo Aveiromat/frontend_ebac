@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,55 @@
     <title>Meu Github</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <header>
         <div class="container">
-            <img class="profile-avatar" src="https://via.placeholder.com/180x180" alt=".">
-            <h1 class="profile-name">Gian Souza</h1>
-            <h2 class="profile-username">@ogiansouza</h2>
+            <img class="profile-avatar" src="https://via.placeholder.com/180x180" alt="." id="perfil">
+            <h1 class="profile-name" id="nome"></h1>
+            <h2 class="profile-username" id="user"></h2>
             <ul class="numbers">
                 <li class="numbers-item">
                     <h4>Repositórios</h4>
-                    5
+                    <span id="repos"></span>
                 </li>
                 <li class="numbers-item">
                     <h4>Seguidores</h4>
-                    5
+                    <span id="seguidores"></span>
                 </li>
                 <li class="numbers-item">
                     <h4>Seguindo</h4>
-                    5
+                    <span id="seguindo"></span>
                 </li>
             </ul>
-            <a href="#" class="profile-link">Ver no Github</a>
+            <a href="#" id="github" class="profile-link">Ver no Github</a>
         </div>
     </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const nomeElement = document.querySelector('#nome');
+            const userElement = document.querySelector('#user');
+            const perfilElement = document.querySelector('#perfil');
+            const reposElement = document.querySelector('#repos');
+            const seguidoresElement = document.querySelector('#seguidores');
+            const seguindoElement = document.querySelector('#seguindo');
+            const githubElement = document.querySelector('#github');
+
+            fetch('https://api.github.com/users/aveiromat')
+                .then(function (res) {
+                    return res.json();
+                })
+                .then(function (json) {
+                    nomeElement.innerText = json.name;
+                    userElement.innerText = json.login;
+                    perfilElement.src = json.avatar_url;
+                    seguindoElement.innerText = json.following;
+                    seguidoresElement.innerText = json.followers;
+                    reposElement.innerText = json.public_repos;
+                    githubElement.href = json.html_url;
+                })
+        })
+    </script>
 </body>
+
 </html>
