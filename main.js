@@ -1,7 +1,7 @@
-function PersonagemOnePiece(nome, tripulacao, frutaDoDiabo) {
+function PersonagemOnePiece(nome, tripulacao, gomuGomu) {
     this.nome = nome;
     this.tripulacao = tripulacao;
-    this.frutaDoDiabo = frutaDoDiabo;
+    this.gomuGomu = gomuGomu;
     this.apresentar = function() {
         console.log(`Yo-ho-ho! Eu sou o pirata ${this.nome}, membro da tripulação dos ${this.tripulacao}!`);
     }
@@ -10,22 +10,22 @@ function PersonagemOnePiece(nome, tripulacao, frutaDoDiabo) {
     }
 
     this.obterInformacoes = function() {
-        return `Nome: ${this.nome}, Tripulação: ${this.tripulacao}, Akuma no mi: ${this.frutaDoDiabo}`;
+        return `Nome: ${this.nome}, Tripulação: ${this.tripulacao}, Akuma no mi: ${this.gomuGomu}`;
     }
 }
 
-function MembroTripulacao(nome, tripulacao, frutaDoDiabo, cargo) {
+function MembroTripulacao(nome, tripulacao, gomuGomu, cargo) {
     this.cargo = cargo;
     
     this.realizarTarefa = function() {
         console.log(`Membro da tripulação ${this.nome}, ${this.cargo}, realizando sua tarefa: ${this.cargo}!`);
     }
 
-    PersonagemOnePiece.call(this, nome, tripulacao, frutaDoDiabo);
+    PersonagemOnePiece.call(this, nome, tripulacao, gomuGomu);
 }
 
-function Capitao(nome, tripulacao, frutaDoDiabo) {
-    MembroTripulacao.call(this, nome, tripulacao, frutaDoDiabo, "Capitão");
+function Capitao(nome, tripulacao, gomuGomu) {
+    MembroTripulacao.call(this, nome, tripulacao, gomuGomu, "Capitão");
 
     this.tomarDecisao = function(decisao) {
         console.log(`Capitão ${this.nome} tomando decisão: ${decisao}!`);
