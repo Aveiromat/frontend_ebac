@@ -1,57 +1,45 @@
-// Classe Abstrata: Veiculo
-function Veiculo(marca, modelo, ano) {
-    this.marca = marca;
-    this.modelo = modelo;
-    this.ano = ano;
-    this.acelerar = function() {
-        console.log("Acelerando...");
+function PersonagemOnePiece(nome, tripulacao, frutaDoDiabo) {
+    this.nome = nome;
+    this.tripulacao = tripulacao;
+    this.frutaDoDiabo = frutaDoDiabo;
+    this.apresentar = function() {
+        console.log(`Yo-ho-ho! Eu sou o pirata ${this.nome}, da tripulação dos ${this.tripulacao}!`);
     }
-    this.frear = function() {
-        console.log("Freando...");
+    this.realizarAcao = function(acao) {
+        console.log(`${this.nome} realizando ação pirata: ${acao}!`);
+    }
+
+    this.obterInformacoes = function() {
+        return `Nome: ${this.nome}, Tripulação: ${this.tripulacao}, Akuma no mi: ${this.frutaDoDiabo}`;
     }
 }
 
-// Classes Herdeiras: Carro e Moto
-function Carro() {
-    this.numPortas = numPortas;
+function MembroTripulacao(nome, tripulacao, frutaDoDiabo, cargo) {
+    this.cargo = cargo;
     
-    this.abrirPorta = function() {
-        console.log("Abrindo a porta do carro.");
+    this.realizarTarefa = function() {
+        console.log(`Membro da tripulação ${this.nome}, ${this.cargo}, realizando sua tarefa: ${this.cargo}!`);
     }
 
-    Veiculo.call(this, marca,modelo, ano);
+    PersonagemOnePiece.call(this, nome, tripulacao, frutaDoDiabo);
 }
 
-function Moto(){
-        this.cilindradas = cilindradas;
+const luffy = new MembroTripulacao("Monkey D. Luffy", "Chapéu de Palha", "Gomu Gomu no Mi", "Capitão");
+const zoro = new MembroTripulacao("Roronoa Zoro", "Chapéu de Palha", "-", "Espadachim");
+const nami = new MembroTripulacao("Nami", "Chapéu de Palha", "-", "Navegadora");
 
-    this.empinar = function() {
-        console.log("Empinando a moto!");
-    }
-
-    Veiculo.call(this, marca,modelo, ano, cilindradas);
-}
-
-// Instâncias de Objetos
-const carro1 = new Carro("Ford", "Focus", 2022, 4);
-const moto1 = new Moto("Honda", "CBR", 2021, 600);
-
-const carro2 = new Carro("Chevrolet", "Cruze", 2020, 2);
-const moto2 = new Moto("Yamaha", "YZF", 2022, 1000);
-
-const carro3 = new Carro("Volkswagen", "Golf", 2021, 5);
-const moto3 = new Moto("Suzuki", "GSX-R", 2020, 750);
-
-// Testando métodos e propriedades
-carro1.acelerar();
-carro1.abrirPorta();
-
-moto2.frear();
-moto2.empinar();
-
-
-//• Crie uma classe de uma abstração;
-
-//• Crie pelo menos duas classes que sejam herdeiras da classe criada anteriormente;
-
-//• Crie pelo menos três instâncias de objetos;
+console.log()
+console.log("Tripulação do Chapéu de Palha:");
+console.log(luffy.obterInformacoes());
+console.log(zoro.obterInformacoes());
+console.log(nami.obterInformacoes());
+console.log();
+luffy.apresentar();
+luffy.realizarAcao("Esticar os braços");
+console.log();
+zoro.apresentar();
+zoro.realizarAcao("Treinar com espadas");
+console.log();
+nami.apresentar();
+nami.realizarTarefa();
+console.log();
