@@ -64,6 +64,8 @@ function filtraAlunosDeBackend(aluno) {
     return aluno.curso === 'Backend';
 }
 
+//const filtraAlunosDeBackend = (aluno, indice) => aluno.curso === 'Backend';
+
 const alunosDeBackend = alunos2.filter(filtraAlunosDeBackend)
 
 console.log(alunosDeBackend)
