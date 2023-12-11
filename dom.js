@@ -1,0 +1,8 @@
+"use strict";
+const campoNome = document.getElementById('nome');
+const formulario = document.getElementsByTagName('form');
+const botaoEnviar = document.getElementById('btn-enviar');
+//caso nao seja nulo ele acessa o elemento
+botaoEnviar === null || botaoEnviar === void 0 ? void 0 : botaoEnviar.addEventListener('click', (e) => {
+    e.pageY;
+});
